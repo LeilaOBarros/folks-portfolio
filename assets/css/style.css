@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 *{
     padding: 0;
@@ -23,9 +23,24 @@ a{
     justify-content: center;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color: #000;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 05.rem;
+}
+
 /* Principal Section */
 #principal{
-    background-image: url(./img/background-prinicipal.jpg);
+    background-image: url(/assets/img/background-principal.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -116,6 +131,88 @@ a{
     background-color: #FF00FF;
 }
 /* End Principal Section */
+
+/* Section Serviços */
+#servicos .servicos{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#servicos .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#servicos .section-title span{
+    color: #FF00FF;
+}
+
+#servicos .servicos-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#servicos .servico-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/assets/img/img-1.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#servicos .servico-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: -1;
+}
+
+#servicos .servicos-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#servicos .servico-item h2{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#servicos .servico-item p{
+    color: white;
+    text-align: left;
+
+}
+
+
+/* End Section Serviços */
+
 
 /* Keyframes */
 @keyframes text_reveal_box{
