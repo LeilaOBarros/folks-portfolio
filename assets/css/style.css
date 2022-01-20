@@ -11,6 +11,9 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+/**********************************/
+/* Códigos que se repetem
+/**********************************/
 a{
     text-decoration: none;
 }
@@ -38,7 +41,23 @@ p{
     letter-spacing: 05.rem;
 }
 
-/* Principal Section */
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span{
+    color: #FF00FF;
+}
+
+/**********************************/
+/* 0. Section Principal
+/**********************************/
 #principal{
     background-image: url(/assets/img/background-principal.jpg);
     background-size: cover;
@@ -130,29 +149,16 @@ p{
     color: white;
     background-color: #FF00FF;
 }
-/* End Principal Section */
 
-/* Section Serviços */
+/**********************************/
+/* 1. Section Serviços
+/**********************************/
 #servicos .servicos{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
-}
-
-#servicos .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
-#servicos .section-title span{
-    color: #FF00FF;
 }
 
 #servicos .servicos-bottom{
@@ -207,14 +213,99 @@ p{
 #servicos .servico-item p{
     color: white;
     text-align: left;
-
 }
 
+/**********************************/
+/* 2. Section Projetos
+/**********************************/
+#projetos .projetos{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 
-/* End Section Serviços */
+#projetos .projetos-header{
+    margin-bottom: 50px;
+}
 
+#projetos .todos-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-/* Keyframes */
+#projetos .projeto-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#projetos .projeto-info{
+    padding: 30px;
+    flex-basis: 50%;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff00ff8a;
+    color: #fff;
+    
+}
+
+#projetos .projeto-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projetos .projeto-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#projetos .projeto-info p{
+    color: #fff;
+}
+
+#projetos .projeto-img{
+    flex-basis: 50%;
+    height: 300px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+#projetos .projeto-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+
+#projetos .projeto-img img{
+    transition: .5s ease transform;
+}
+
+#projetos .projeto-item:hover .projeto-img img {
+    transform: scale(1.1);
+}
+
+/**********************************/
+/* Keyframes
+/**********************************/
 @keyframes text_reveal_box{
     50%{
         width: 100%;
@@ -232,4 +323,3 @@ p{
 
     }
 }
-/* End Keyframes */
