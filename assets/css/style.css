@@ -386,7 +386,58 @@ p{
 }
 
 /**********************************/
-/* Keyframes
+/* Section Contato
+/**********************************/
+#contato .contato{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%
+}
+
+#contato .contato-items{
+    width: 400px;
+}
+
+#contato .contato-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0 #b900b9;
+    transition: .3s ease box-shadow;
+}
+
+#contato .contato-item:hover{
+    box-shadow: 0px 0px 15px 0 #FF00FF;
+}
+
+#contato .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contato .contato-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contato .contato-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+/**********************************/
+/* Keyframes 
 /**********************************/
 @keyframes text_reveal_box{
     50%{

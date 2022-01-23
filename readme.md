@@ -10,5 +10,5 @@
 * <strong>CSS3 Flexbox</strong>
   
 ## 📚 Intuito do Projeto
-* Apesar de principiante na área de Desenvolvimento Web FrontEnd, senti a necessidade de criar um portfólio para exercitar as principais tecnologias de desenvolvimento Front-End, como <strong>HTML5</strong> e <strong>CSS3</strong>.
+* Apesar de principiante na área de Desenvolvimento Web Front End senti a necessidade de criar um portfólio.
 * Além disto, também é uma ótima oportunidade de expor meus conhecimentos adquiridos através dos estudos.
