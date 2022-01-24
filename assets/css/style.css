@@ -100,6 +100,16 @@ p{
     background-color: #FF00FF;
 }
 
+.marca h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.marca h1 span{
+    color: #FF00FF;
+}
+
 /**********************************/
 /* Section Principal
 /**********************************/
@@ -282,7 +292,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color: #b900b9;
+    background-color: #000;
     color: #fff;
     
 }
@@ -392,7 +402,7 @@ p{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    width: 90%
+    width: 90%;
 }
 
 #contato .contato-items{
@@ -410,8 +420,10 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 10px 0 #b900b9;
+    box-shadow: 0px 0px 10px 0 #0000002c;
     transition: .3s ease box-shadow;
+    background-color: black;
+    color: #fff;
 }
 
 #contato .contato-item:hover{
@@ -437,6 +449,58 @@ p{
 }
 
 /**********************************/
+/* Footer
+/**********************************/
+#footer{
+    background-color: #000;
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; /*VER DEPOIS EU QUE COLOQUEI*/
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+/*
+********ICONE SEM COR********
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+*/
+
+#footer p{
+    color: #333;
+    font-size: 1.3rem;
+}
+
+/**********************************/
 /* Keyframes 
 /**********************************/
 @keyframes text_reveal_box{
@@ -453,6 +517,13 @@ p{
 @keyframes text_reveal{
     100%{
         color: white;
-
     }
 }
+
+/**********************************/
+/* Media Query Para Tablet
+/**********************************/
+
+/**********************************/
+/* Media Query Para Tablet
+/**********************************/
