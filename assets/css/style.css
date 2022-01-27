@@ -101,7 +101,7 @@ p{
 }
 
 .marca h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: #fff;
 }
@@ -195,6 +195,11 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#servicos .servicos-top{
+    width: 600px;
+    max-margin: 0 auto;
 }
 
 #servicos .servicos-bottom{
@@ -414,21 +419,20 @@ p{
     width: 80%;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
     padding: 30px;
     margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 10px 0 #0000002c;
+    box-shadow: 0px 0px 5px 0 #7c42ff;
     transition: .3s ease box-shadow;
     background-color: black;
     color: #fff;
 }
 
 #contato .contato-item:hover{
-    box-shadow: 0px 0px 15px 0 #7c42ff;
+    box-shadow: 0px 0px 20px 0 #7c42ff;
 }
 
 #contato .icon{
@@ -465,9 +469,10 @@ p{
 
 #footer h2{
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: .1rem;
+    text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center; /*VER DEPOIS EU QUE COLOQUEI*/
@@ -497,7 +502,7 @@ p{
 */
 
 #footer p{
-    color: #333;
+    color: #c0c0c0;
     font-size: 1.3rem;
 }
 
@@ -638,3 +643,9 @@ p{
 /**********************************/
 /* Media Query Para Desktop
 /**********************************/
+@media only screen and (min-width:1200px){
+    #servicos .servicos-bottom .servico-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
