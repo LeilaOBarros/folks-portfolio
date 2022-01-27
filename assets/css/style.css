@@ -27,13 +27,13 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #FF00FF;;
+    background: #7c42ff;
     border-radius: 100vw;
     border: .30em solid #363636;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #b900b9;
+    background: #5912ff;
 }
 
 /**********************************/
@@ -77,7 +77,7 @@ p{
 }
 
 .section-title span{
-    color: #FF00FF;
+    color: #7c42ff;
 }
 
 .cta{
@@ -85,7 +85,7 @@ p{
     padding: 10px 30px;
     color: #fff;
     background-color: transparent;
-    border: 2px solid #FF00FF;
+    border: 2px solid #7c42ff;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -97,7 +97,7 @@ p{
 
 .cta:hover{
     color: white;
-    background-color: #FF00FF;
+    background-color: #7c42ff;
 }
 
 .marca h1{
@@ -107,7 +107,7 @@ p{
 }
 
 .marca h1 span{
-    color: #FF00FF;
+    color: #7c42ff;
 }
 
 /**********************************/
@@ -169,7 +169,7 @@ p{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #FF00FF; 
+    background-color: #7c42ff; 
     animation: text_reveal_box 1s ease;  
     animation-delay: .5s;
 }
@@ -292,7 +292,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color: #000;
+    background-color: #7c42ff;
     color: #fff;
     
 }
@@ -300,6 +300,7 @@ p{
 #projetos .projeto-info h1{
     font-size: 4rem;
     font-weight: 500;
+    color: #000;
 }
 
 #projetos .projeto-info h2{
@@ -391,7 +392,7 @@ p{
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid #FF00FF;
+    border: 7px solid #7c42ff;
     z-index: -1;
 }
 
@@ -427,7 +428,7 @@ p{
 }
 
 #contato .contato-item:hover{
-    box-shadow: 0px 0px 15px 0 #FF00FF;
+    box-shadow: 0px 0px 15px 0 #7c42ff;
 }
 
 #contato .icon{
@@ -523,7 +524,117 @@ p{
 /**********************************/
 /* Media Query Para Tablet
 /**********************************/
+@media only screen and (min-width:768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    /* Media Query: Principal */
+    #principal h1{
+        font-size: 7rem;
+    }
+
+    /* Media Query: Serviços */
+    #servicos .servicos-bottom .servico-item{
+        flex-basis: 40%;
+        margin: 2.5%;
+    }
+
+    /* Media Query: Projetos */
+    #projetos .projeto-item{
+        flex-direction: row;
+    }
+
+    #projetos .projeto-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    #projetos .projeto-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        padding: 10px;
+    }
+    
+    #projetos .todos-projetos .projeto-info{
+        height: 100%;
+    }
+
+    #projetos .todos-projetos .projeto-img{
+        height: 100%;
+    }
+
+    /* Media Query: Sobre */
+    #sobre .sobre{
+        flex-direction: row;
+    }
+
+    #sobre .col-left{
+        width: 500px;
+        height: 400px;
+        padding-left: 60px;
+    }
+
+    #sobre .sobre .col-left .sobre-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #7c42ff;
+    }
+
+    #sobre .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+
+    #sobre .col-right h1{
+        text-align: left;
+    }
+
+    /* Media Query: Contato */
+    #contato .contato{
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+
+    #contato .contato-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #contato .contato-item{
+        margin: 20px;
+        flex-direction: row;
+    }
+
+    #contato .contato-item .icon{
+        height: 100px;
+        width: 100px;
+    }
+
+    #contato .contato-item .icon img{
+        object-fit: contain;
+    }
+
+    #contato .contato-item .contato-info{
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+    }
+}
 
 /**********************************/
-/* Media Query Para Tablet
+/* Media Query Para Desktop
 /**********************************/
