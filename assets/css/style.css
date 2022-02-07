@@ -12,6 +12,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /**********************************/
@@ -123,8 +124,9 @@ p{
 }
 
 #header .header{
-    min-height: 12vh;
-    background-color: #000;
+    min-height: 12vh; 
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: 0.3s ease background-color;
 }
 
 #header .nav-bar{
@@ -140,7 +142,7 @@ p{
 #header .nav-list ul{
     list-style: none;
     position: absolute;
-    background-color: #000;
+    background-color: rgb(31, 30, 30);;
     width: 100vw;
     height: 100vh;
     Left: 100%;
@@ -251,8 +253,6 @@ p{
     bottom: 0;
 }
 
-
-
 /**********************************/
 /* Section Principal
 /**********************************/
@@ -341,8 +341,8 @@ p{
 }
 
 #servicos .servicos-top{
-    width: 600px;
-    max-margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #servicos .servicos-bottom{
@@ -556,6 +556,7 @@ p{
 
 #contato .contato-items{
     width: 400px;
+    justify-content: space-evenly;
 }
 
 #contato .contato-item{
@@ -799,6 +800,29 @@ p{
 /**********************************/
 @media only screen and (min-width:1200px){
     /* Media Query: Header */
+    #header .hamburger{
+        display: none;
+    }
+
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    #header .nav-list ul li{
+        display: inline-block;
+    }
+
+    #header .nav-list ul li a{
+        font-size: 1.5rem;
+    }
+
+    #header .nav-list ul a:after{
+        display: none;
+    }
 
     /* Media Query: Serviços*/
     #servicos .servicos-bottom .servico-item{
