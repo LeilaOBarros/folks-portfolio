@@ -11,8 +11,9 @@
 * Javascript
   
 ## 📚 Intuito do Projeto
-* Apesar de principiante na área de Desenvolvimento Web Front End senti a necessidade de criar um portfólio.
+* Apesar de principiante na área de Desenvolvimento Web Front End, senti a necessidade de criar um portfólio.
 * Além disto, também é uma ótima oportunidade de expor meus conhecimentos adquiridos através dos estudos.
+* Toda a página foi feita com ajuda de documentações e tutoriais no youtube.
 
 ## 💻 GitHub Pages
-* https://leilaobarros.github.io/portfolio-pessoal/
+* https://leilaobarros.github.io/folks-portfolio/
