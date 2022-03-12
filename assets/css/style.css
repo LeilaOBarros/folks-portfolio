@@ -109,6 +109,19 @@ hr{
     background-color: #7c42ff;
 }
 
+.btn-projetos{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 15px;
+}
+
 .marca h1{
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -338,9 +351,9 @@ hr{
 }
 
 /**********************************/
-/* Section Serviços
+/* Section Conhecimentos
 /**********************************/
-#servicos .servicos{
+#conhecimentos .conhecimentos{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
@@ -348,12 +361,12 @@ hr{
     padding: 100px 0;
 }
 
-#servicos .servicos-top{
+#conhecimentos .conhecimentos-top{
     max-width: 600px;
     margin: 0 auto;
 }
 
-#servicos .servicos-bottom{
+#conhecimentos .conhecimentos-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,7 +374,7 @@ hr{
     margin-top: 30px;
 }
 
-#servicos .servico-item{
+#conhecimentos .conhecimento-item{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -377,7 +390,7 @@ hr{
     overflow: hidden;
 }
 
-#servicos .servico-item::after{
+#conhecimentos .conhecimento-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -389,20 +402,20 @@ hr{
     z-index: -1;
 }
 
-#servicos .servicos-bottom .icon{
+#conhecimentos .conhecimentos-bottom .icon{
     height: 80px;
     width: 80px;
     margin-bottom: 10px;
 }
 
-#servicos .servico-item h2{
+#conhecimentos .conhecimento-item h2{
     font-size: 2rem;
     color: #fff;
     margin-bottom: 5px;
     text-transform: uppercase;
 }
 
-#servicos .servico-item p{
+#conhecimentos .conhecimento-item p{
     color: white;
     text-align: left;
 }
@@ -486,7 +499,7 @@ hr{
     height: 100%;
     width: 100%;
     background-color: #000;
-    opacity: .7;
+    opacity: .4;
 }
 
 #projetos .projeto-img img{
@@ -825,7 +838,7 @@ hr{
     }
 
     /* Media Query: Serviços */
-    #servicos .servicos-bottom .servico-item{
+    #conhecimentos .conhecimentos-bottom .conhecimento-item{
         flex-basis: 40%;
         margin: 2.5%;
     }
@@ -954,7 +967,7 @@ hr{
     }
 
     /* Media Query: Serviços*/
-    #servicos .servicos-bottom .servico-item{
+    #conhecimentos .conhecimentos-bottom .conhecimento-item{
         flex-basis: 22%;
         margin: 1.5%;
     }
